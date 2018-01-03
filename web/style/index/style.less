@@ -1,0 +1,151 @@
+
+//--------banner-----------
+#banner{
+  #myCarousel{
+    .left{
+      background-image: linear-gradient(to right,rgba(0,0,0,.2) 0,rgba(0,0,0,.0001) 100%);
+    }
+    .right{
+      background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.2) 100%);
+    }
+    .carousel-control:focus, .carousel-control:hover{
+      opacity: .6;
+    }
+    .carousel-control span{
+      font-size:60px;
+    }
+
+
+  }
+}
+
+
+//---------main--------------
+
+#main{
+
+  @h4-width:466px;
+  background-color: #fff;
+  width:78%;
+  margin:0 auto;
+  .main-content-1{
+    padding:35px;
+    a{
+      display: block;
+    }
+    a:hover{
+
+      transform:scale(1.03);
+      -ms-transform:scale(1.03);
+      -moz-transform:scale(1.03);
+      -webkit-transform:scale(1.03);
+      -o-transform:scale(1.03);
+      box-shadow: 1px 3px 3px 1px darkgray;
+    }
+  }
+
+  .main-content-2{
+    height:106px;
+    h4{
+      margin:0 auto;
+      height:66px;
+      line-height: 0px;
+      text-align: center;
+      width: @h4-width;
+      position: relative;
+      border-bottom: 1px dashed #f9b552;
+
+    }
+    h4:after{
+      content:'';
+      display: block;
+      width:100px;
+      height: 4px;
+      position: absolute;
+      bottom: -3px;
+      left:((@h4-width)-100px)/2;
+      background-color: #f9b552;
+    }
+  }
+  .main-content-3{
+    .a-block{
+      width:96%;
+      background-color: #fff;
+      overflow: hidden;
+      
+      .images{
+        width:100%;
+        img{
+          width: 100%;
+        }
+      }
+      h5,P,span{
+
+        display: block;
+        width:92%;
+        margin:0 auto;
+      }
+      h5{
+        height:46px;
+        line-height: 56px;
+        font-weight:bold;
+      }
+      p{
+        height:24px;
+        line-height: 24px;
+        margin-bottom:20px;
+      }
+      span{
+        text-align: center;
+      }
+    }
+    .a-block:hover{
+      color: #000;
+    }
+  }
+}
+#banner{
+  width:78%;
+  margin:0 auto;
+  .carousel-indicators{
+    z-index:2;
+    li{
+      background-color: #5a483e;
+      border-color: #5a483e;
+    }
+    .active{
+      background-color: #fff !important;
+    }
+  }
+  img{
+    width:100%;
+  }
+  .btn{
+    position: absolute;
+    top:80%;
+    left:0;
+    width:100%;
+    z-index: 5;
+  }
+  button{
+    font-weight:bold;
+    width: 130px;
+    height:40px;
+    border:1px solid #1b1811;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    background-color: transparent;
+    color: #1b1811;
+    margin:0 auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #banner{
+    width:100%;
+  }
+  #main{
+    width:96%;
+  }
+}

@@ -1,0 +1,49 @@
+#main {
+  padding-bottom: 50px;
+}
+#main .bg {
+  background-color: lightskyblue ;
+  padding-top: 60px;
+}
+#main .bg .inner {
+  padding-top: 30px;
+  background-color: #fff;
+}
+#main .left .glyphicon {
+  color: deepskyblue;
+  top: 3px;
+  padding-right: 5px;
+}
+#main .left p {
+  padding: 10px 0;
+}
+#main .left p span {
+  color: deepskyblue;
+}
+#main .left .change-photo {
+  width: 100px;
+  overflow: hidden;
+  position: relative;
+}
+#main .left .change-photo input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+#main .left .change-photo div {
+  color: deepskyblue;
+  cursor: pointer;
+}
+#main .middle,
+#main .right {
+  padding-top: 30px;
+}
+#main .middle .form-group,
+#main .right .form-group {
+  margin-bottom: 25px;
+}
+#main .middle button {
+  padding-left: 40px;
+  padding-right: 40px;
+}

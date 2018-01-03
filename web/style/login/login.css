@@ -1,0 +1,163 @@
+#main-content {
+  width: 100%;
+  height: 712px;
+  margin-bottom: 4px;
+  padding-top: 93px;
+  background: url("../../images/banner/1.jpg") no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+#main-content input {
+  border: 1px solid #000;
+}
+#main-content .banner-wrapper {
+  overflow: hidden;
+  width: 782px;
+  height: 498px;
+  margin: 0 auto;
+  background-color: white;
+}
+#main-content .banner-wrapper .banner {
+  float: left;
+  width: 499px;
+  overflow: hidden;
+}
+#main-content .banner-wrapper .banner img {
+  width: 100%;
+}
+#main-content .banner-wrapper .content-wrapper {
+  float: right;
+  border-left: 1px dashed #313131;
+  width: 283px;
+  height: 100%;
+}
+#main-content .banner-wrapper .content-wrapper .content-inner {
+  width: 82%;
+  margin: 0 auto;
+}
+#main-content .banner-wrapper .content-wrapper .content-inner .text-capitalize {
+  margin-top: 30px;
+  margin-bottom: 8px;
+}
+#main-content .or {
+  width: 30px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+}
+#main-content .or:before,
+#main-content .or:after {
+  content: "";
+  height: 1px;
+  width: 300%;
+  background-color: #000;
+  position: absolute;
+}
+#main-content .or:before {
+  top: 50%;
+  left: -300%;
+}
+#main-content .or:after {
+  top: 50%;
+  right: -300%;
+}
+#main-content button {
+  margin-top: 12px;
+  border: 1px solid black;
+}
+#main-content button:last-of-type {
+  color: #e5e5e5;
+}
+#main-content .yellow {
+  background-color: #f9b552;
+}
+#main-content .gray {
+  background-color: #e5e5e5;
+}
+#main-content .black {
+  background-color: #000000;
+}
+#main-form label {
+  font-size: 11px;
+  font-weight: lighter;
+  height: 18px;
+  line-height: 18px;
+}
+#main-form label.error {
+  position: absolute;
+}
+#main-form .forget {
+  position: relative;
+  overflow: hidden;
+}
+#main-form .forget a {
+  font-size: 11px;
+  font-weight: lighter;
+  height: 18px;
+  line-height: 18px;
+}
+#main-form .forget .checkbox {
+  position: absolute;
+  top: -10px;
+  right: 0px;
+}
+#main-form .forget input {
+  margin-top: 2px;
+}
+#main-form .warning {
+  padding-bottom: 5px;
+  font-size: 11px;
+  color: #fd081a;
+}
+#main-form #submit {
+  margin-top: 16px;
+}
+#main-content .register-wrapper {
+  display: none;
+  float: right;
+  border-left: 1px dashed #313131;
+  width: 283px;
+  height: 100%;
+}
+#main-content .register-wrapper .register-inner {
+  width: 82%;
+  margin: 0 auto;
+}
+#main-content .register-wrapper .register-inner .text-capitalize {
+  text-align: center;
+  padding: 30px 0px;
+  margin-top: 30px;
+  margin-bottom: 8px;
+}
+#main-content .register-wrapper #register-form label {
+  font-size: 11px;
+  font-weight: lighter;
+  height: 18px;
+  line-height: 18px;
+}
+#main-content .register-wrapper #register-form label.error {
+  position: absolute;
+}
+#main-content .register-wrapper #register-form .form-group {
+  margin-bottom: 30px;
+}
+#main-content .register-wrapper .sign-in {
+  text-decoration: underline;
+  margin-top: 30px;
+}
+@media screen and (max-width: 782px) {
+  #main-content .banner-wrapper {
+    width: 283px;
+  }
+  #main-content .banner-wrapper .banner {
+    display: none;
+  }
+  #main-content .banner-wrapper .content-wrapper {
+    border: none;
+  }
+  #main-content .banner-wrapper .register-wrapper {
+    border: none;
+  }
+}

@@ -1,0 +1,62 @@
+#main .container {
+  padding-bottom: 40px;
+}
+#main h3 {
+  padding: 50px 0;
+  text-align: center;
+}
+#main h4 {
+  padding-bottom: 20px;
+}
+#main #product-lists .total-price {
+  padding-top: 20px;
+  text-align: center;
+}
+#main #product-lists .total-price a {
+  letter-spacing: .2em;
+}
+#main #product-lists .total-price a span {
+  padding-right: .5em;
+}
+#main #product-lists .media .media-object {
+  width: 80px;
+}
+#main #product-lists .media .media-body {
+  padding-top: 10px;
+}
+#main #product-lists .media .media-body h4,
+#main #product-lists .media .media-body p {
+  font-size: 14px;
+}
+#main #product-lists .media .media-body h4 {
+  padding-bottom: 0px;
+}
+#main #product-lists .media .media-body .list-price {
+  float: right;
+}
+#main #product-lists .total-wrapper {
+  padding: 20px 0;
+}
+#main #product-lists .total-wrapper .total-mes {
+  padding-bottom: 40px;
+}
+#main #product-lists .total-wrapper .total-mes p {
+  line-height: 26px;
+}
+#main #product-lists .total-wrapper .total {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #ebebeb;
+}
+#main #product-lists .total-wrapper .payment-method {
+  padding: 2rem 0;
+  text-align: center;
+}
+#main #product-lists .total-wrapper .payment-method p {
+  padding: 5px 0px;
+  font-size: 12px;
+}
+#main #product-lists .total-wrapper .payment-method .img-pay img {
+  display: inline-block;
+  width: 4rem;
+  margin: 1rem .5rem;
+}

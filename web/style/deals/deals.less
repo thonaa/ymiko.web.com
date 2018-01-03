@@ -1,0 +1,227 @@
+
+#main-content {
+  background-color: #f9fafc;
+  .main {
+    width: 94%;
+    margin: 0 auto;
+    padding: 40px 0;
+
+    .container-fluid{
+      padding-bottom:40px;
+    }
+    .content-half-left {
+      .deal-images-show {
+        img {
+          width: 100%;
+        }
+      }
+      .deal-images-lists {
+        width: 100%;
+        margin-top: 30px;
+        position: relative;
+        .inner {
+          height: 100%;
+          width: 100%;
+          overflow: hidden;
+          position: relative;
+        }
+        ul {
+          width: 1000px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          li {
+            float: left;
+            img {
+              border: 1px solid transparent;
+              width: 90%;
+              cursor: pointer;
+            }
+
+          }
+          li:nth-of-type(1) img {
+            border: 1px solid #f9b552;
+          }
+        }
+        .move-btn {
+          position: absolute;
+          top: 40px;
+          cursor: pointer;
+
+        }
+        .pre-btn {
+          left: -2em;
+        }
+        .nxt-btn {
+          right: -2em;
+        }
+      }
+    }
+    .content-half-right {
+      .living {
+        display: block;
+        padding-bottom: 20px;
+        font-size: 18px;
+        font-family: "Courier New", Georgia, Gabriola, Arial;
+      }
+      h4 {
+        padding-top: 40px;
+        padding-bottom: 20px;
+      }
+      p {
+        line-height: 25px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #000;
+        margin-bottom: 40px;
+      }
+      .deal-price {
+        font-size: 2.1em;
+        .old {
+          text-decoration: line-through;
+        }
+        .now {
+          color: red;
+          margin-left: 10px;
+        }
+      }
+      .deal-count {
+        overflow: hidden;
+        margin: 30px 0;
+        border: 1px solid #000;
+        width: 120px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        height: 32px;
+        input {
+          width: 54px;
+          display: block;
+          float: left;
+          height: 100%;
+          border: none;
+          text-align: center;
+        }
+        span {
+          background-color: #fff;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          text-align: center;
+          line-height: 26px;
+          display: block;
+          float: left;
+          height: 100%;
+          width: 32px;
+          cursor: pointer;
+          font-size: 20px;
+        }
+
+      }
+      button {
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-bottom: 15px;
+      }
+      .pay-by-other {
+        padding-top: 15px;
+        font-size: 27px;
+        i {
+          margin-right: 50px;
+        }
+      }
+
+    }
+    .product-big-intro{
+      width:100%;
+      img{
+        width:100%
+      }
+    }
+
+
+    .recommend {
+      border-top:1px solid #ECECEC;
+      margin: 30px 0;
+      text-align: center;
+      .cart-text{
+        font-size:18px;
+        line-height: 40px;
+        text-align: left;
+        padding:30px 0 50px 20px;
+        border-bottom: 2px solid #ececec;
+      }
+      h3{
+        text-align: left;
+        padding:30px 0;
+      }
+      img {
+        width: 96%;
+      }
+      h4 {
+        padding: 20px 0 12px 0;
+
+      }
+    }
+  }
+
+}
+
+body {
+  position: relative;
+  width: 100%;
+}
+
+#modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .3);
+  z-index: 300;
+  position: fixed;
+  top: 0;
+  left: 0;
+  .box {
+    width: 480px;
+    height: 240px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 20% auto;
+    text-align: center;
+    p {
+
+      padding: 70px 0 40px 0;
+      font-size: 23px;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    .btn {
+      font-size: 18px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 1120px) {
+  #main-content .main {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #model {
+    .box {
+      margin: 36% auto;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #model {
+    .box {
+      margin: 50% auto;
+    }
+  }
+}

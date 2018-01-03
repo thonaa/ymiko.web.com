@@ -1,0 +1,92 @@
+#main{
+  h3{
+    padding:20px 0;
+    text-align: center;
+  }
+  h5{
+    padding:10px 0;
+  }
+  h4{
+    padding:20px 0;
+  }
+  p.last{
+    padding-bottom:30px;
+    a{
+      color: cornflowerblue;
+      text-decoration: underline;
+    }
+  }
+  #join-form{
+    .btn{
+      margin-bottom:40px;
+      padding-left:40px;
+      padding-right:40px;
+    }
+    label.error{
+      position: absolute;
+      color: red;
+
+    }
+    label{
+      font-weight: lighter;
+    }
+    .form-group{
+      margin-bottom:25px;
+      >span{
+        color: red;
+      }
+    }
+    .capicha{
+      padding:0px 20px 36px 0px;
+      position: relative;
+      #codeInput{
+        width:130px;
+      }
+      span{
+        position: absolute;
+        top:0px;
+        left:150px;
+        cursor: pointer;
+        letter-spacing: .3em;
+        padding:5px;
+        font-size: 1.2em;
+        color: darkgray;
+        text-align: center;
+        -webkit-border-radius:2px;
+        -moz-border-radius:2px;
+        border-radius:2px;
+        border:1px solid darkgray;
+      }
+
+    }
+  }
+}
+#form-success {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 500;
+  .wrap {
+    width: 100%;
+    height: 300px;
+    padding-top: 17%;
+    > div {
+      padding: 16px 40px 26px 40px;
+      background-color: #fff;
+      margin: 0 auto;
+      width: 400px;
+      h4 {
+        padding: 12px 0px;
+        border-bottom: 1px solid lightgrey;
+      }
+      p {
+        padding-top: 20px;
+      }
+
+    }
+  }
+}
