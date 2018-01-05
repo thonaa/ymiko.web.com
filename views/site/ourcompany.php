@@ -1,5 +1,5 @@
 <!--主要界面-->
-<div id="main-about" class="container">
+<div id="main" class="container">
     <h3>Our Company</h3>
     <h4>Ymiko: Focus On Quality and Service</h4>
     <p>Ymiko starts its journey in Shenzhen, a dynamic and prosperous city, with the key value of “Focus on Quality and Service”.</p>

@@ -112,7 +112,7 @@ AppAsset::register($this);
             <dt class="text-capitalize">Support<span class="glyphicon glyphicon-plus hidden-lg hidden-md"></span></dt>
             <dd><a href="?r=site/support#w">Warranty</a></dd>
             <dd><a href="?r=site/support#p">Privacy Policy</a></dd>
-            <dd><a href="?r=site/support#t">Trems of Use</a></dd>
+            <dd><a href="?r=site/support#t">Terms of Use</a></dd>
         </dl>
         <div class="col-md-4 col-md-offset-2">
             <dl class="subscribe text-capitalize">

@@ -55,6 +55,9 @@ $(function () {
 			});
 		},
 		rules: {
+			url:{
+				url:true
+			},
 			name: {
 				required: true
 			},
@@ -65,7 +68,8 @@ $(function () {
 		},
 		messages: {
 			required: "This field is required.",
-			email: "Please enter a valid email address."
+			email: "Please enter a valid email address.",
+            url: "Please enter a valid URL."
 		}
 
 	})

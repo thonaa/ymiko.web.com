@@ -16,14 +16,14 @@
                 <div class="list text-capitalize">privacy policy</div>
             </a>
             <a href="javascript:;">
-                <div class="list text-capitalize">terms of us</div>
+                <div class="list text-capitalize">terms of use</div>
             </a>
         </div>
         <div class="visible-nav-list visible-xs visible-sm ">
             <h4><a href="javascript:;">refund & exchange</a></h4>
             <p><a href="javascript:;">warrant</a></p>
             <p><a href="javascript:;">privacy policy</a></p>
-            <p><a href="javascript:;">terms of us</a></p>
+            <p><a href="javascript:;">terms of use</a></p>
             <span class="glyphicon glyphicon-chevron-down"></span>
 
         </div>

@@ -1,5 +1,5 @@
 <!--主要界面-->
-<div id="main-about" class="container">
+<div id="main" class="container">
 
     <h3>Contact Us</h3>
     <p>Customer Service Inquiries</p>
