@@ -17,7 +17,7 @@
   margin: 0 auto;
 }
 #main .main-content-1 {
-  padding: 35px;
+  padding: 35px 0px;
 }
 #main .main-content-1 a {
   display: block;
@@ -35,8 +35,8 @@
 }
 #main .main-content-2 h4 {
   margin: 0 auto;
-  height: 66px;
-  line-height: 0px;
+  height: 80px;
+  line-height: 40px;
   text-align: center;
   width: 466px;
   position: relative;
@@ -53,7 +53,6 @@
   background-color: #f9b552;
 }
 #main .main-content-3 .a-block {
-  width: 96%;
   background-color: #fff;
   overflow: hidden;
 }
@@ -87,7 +86,6 @@
   color: #000;
 }
 #banner {
-  width: 78%;
   margin: 0 auto;
 }
 #banner .carousel-indicators {

@@ -10,7 +10,9 @@
   padding-bottom: 40px;
 }
 #main-content .main .content-half-left .deal-images-show img {
-  width: 100%;
+  display: block;
+  margin: 0 auto;
+  width: 86%;
 }
 #main-content .main .content-half-left .deal-images-lists {
   width: 100%;
@@ -34,7 +36,7 @@
 }
 #main-content .main .content-half-left .deal-images-lists ul li img {
   border: 1px solid transparent;
-  width: 90%;
+  width: 73%;
   cursor: pointer;
 }
 #main-content .main .content-half-left .deal-images-lists ul li:nth-of-type(1) img {
@@ -145,7 +147,7 @@
   padding: 30px 0;
 }
 #main-content .main .recommend img {
-  width: 96%;
+  width: 92%;
 }
 #main-content .main .recommend h4 {
   padding: 20px 0 12px 0;

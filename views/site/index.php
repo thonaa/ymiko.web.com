@@ -8,7 +8,6 @@
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
             <li data-target="#myCarousel" data-slide-to="3"></li>
-            <li data-target="#myCarousel" data-slide-to="4"></li>
         </ol>
         <!-- 轮播（Carousel）项目 -->
         <div class="carousel-inner">
@@ -18,23 +17,18 @@
                 </a>
             </div>
             <div class="item">
-                <a href="?r=product/detail&id=2">
-                    <img src="images/banner2.jpg" alt="Second slide" class="image-index-slider">
-                </a>
-            </div>
-            <div class="item">
                 <a href="?r=product/detail&id=7">
-                    <img src="images/banner3.jpg" alt="Third slide" class="image-index-slider">
+                    <img src="images/banner2.jpg" alt="Third slide" class="image-index-slider">
                 </a>
             </div>
             <div class="item">
                 <a href="?r=product/detail&id=10">
-                    <img src="images/banner4.jpg" alt="fouth slide" class="image-index-slider">
+                    <img src="images/banner3.jpg" alt="fouth slide" class="image-index-slider">
                 </a>
             </div>
             <div class="item">
                 <a href="?r=product/detail&id=4">
-                    <img src="images/banner5.jpg" alt="fifth slide" class="image-index-slider">
+                    <img src="images/banner4.jpg" alt="fifth slide" class="image-index-slider">
                 </a>
             </div>
         </div>
@@ -93,8 +87,7 @@
     </div>
 	
 </div>
-<?php 	
-	
-$this->registerJsFile('@web/js/index/index.js', ['depends' => ['app\assets\AppAsset']]); 	
+<?php
+$this->registerJsFile('@web/js/index/index.js', ['depends' => ['app\assets\AppAsset']]);
 
 ?>	

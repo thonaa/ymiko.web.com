@@ -6,6 +6,7 @@ use Yii;
 use yii\web\Controller;
 use yii\web\Response;
 use app\models\Product;
+use app\models\Upload;
 
 class ProductController extends Controller
 {
@@ -23,7 +24,7 @@ class ProductController extends Controller
 					from yk_product as a left join yk_category as b 
 					on a.cid=b.ID where cid = {$cid} 
 					order by a.id desc 
-					limit 0,3";
+					limit 0,4";
 			$arr = $db->createCommand($sql)->queryAll();
 			$list[] = [
 				'cid' => $cid,
@@ -42,9 +43,9 @@ class ProductController extends Controller
 			$args = $request->post();
 			$cid = isset($args['cid']) ? (int)$args['cid'] : 0;
 			$page = isset($args['page']) ? (int)$args['page'] : 2;
-			$limitStart = ($page-1)*3;
+			$limitStart = ($page-1)*4;
 			$db = Yii::$app->db;
-			$sql = "select id,title,price from yk_product where cid = {$cid} order by id desc limit {$limitStart},3";
+			$sql = "select id,title,price from yk_product where cid = {$cid} order by id desc limit {$limitStart},4";
 			$list = $db->createCommand($sql)->queryAll();
 			Yii::$app->response->format = Response::FORMAT_JSON;
 			if($list) {
@@ -53,6 +54,51 @@ class ProductController extends Controller
 				return ['error' => 1, 'message' => 'Not Found'];
 			}	
 		}
+	}
+	
+	// 添加产品
+	public function actionUpload() 
+	{
+		$CONFIG = json_decode(preg_replace("/\/\*[\s\S]+?\*\//", "", file_get_contents('../config/config.json')), true);
+		$action = $_GET['action'];
+		$base64 = "upload";
+		switch ($action) {
+			case 'config':
+				$result = json_encode($CONFIG);
+				break;
+
+			// 上传图片
+			case 'uploadimage':
+			
+				$config = array(
+					"pathFormat" => $CONFIG['imagePathFormat'],
+					"maxSize" => $CONFIG['imageMaxSize'],
+					"allowFiles" => $CONFIG['imageAllowFiles']
+				);
+				$fieldName = $CONFIG['imageFieldName'];
+				$model = new Upload($fieldName, $config, $base64);
+				$result = json_encode($model->getFileInfo());
+				break;
+
+			default:
+				$result = json_encode(array(
+					'state'=> '请求地址出错'
+				));
+				break;
+		}
+
+		//输出结果
+		if (isset($_GET["callback"])) {
+			if (preg_match("/^[\w_]+$/", $_GET["callback"])) {
+				echo htmlspecialchars($_GET["callback"]) . '(' . $result . ')';
+			} else {
+				echo json_encode(array(
+					'state'=> 'callback参数不合法'
+				));
+			}
+		} else {
+			echo $result;
+		}	
 	}
 	
 	public function actionDetail()

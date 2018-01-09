@@ -35,12 +35,12 @@
                     <span class="add">+</span>
                 </div>
                 <!--<button id="add-to-cart" class="btn btn-warning">ADD TO CART</button>-->
-                <a href="<?= $info['amazon_url'] ?>" target="_blank"><button class="btn btn-default">BUY AT AMAZON</button></a>
+                <a href="<?= $info['amazon_url'] ?>" target="_blank"><button class="btn btn-warning">BUY AT AMAZON</button></a>
                 <div class="pay-by-other">
-                    <a href="javascript:;"><i class="fa fa-amazon"></i></a>
-                    <a href="javascript:;"><i class="fa fa-paypal"></i></a>
-                    <a href="javascript:;"><i class="fa fa-google-plus"></i></a>
                     <a href="javascript:;"><i class="fa fa-facebook-f"></i></a>
+                    <a href="javascript:;"><i class="fa fa-twitter"></i></a>
+                    <a href="javascript:;"><i class="fa fa-pinterest-p"></i></a>
+                    <a href="javascript:;"><i class="fa fa-google-plus"></i></a>
 
                 </div>
             </div>

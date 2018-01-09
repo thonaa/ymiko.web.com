@@ -30,11 +30,11 @@ $(function () {
 					var rows = data.rows;
 					var dom = '<div class="box-content container">';
 					for(i=0;i<rows.length;i++) {
-						dom += '<div class="list-product col-md-4">'+
+						dom += '<div class="list-product col-md-3">'+
 							'<a href="?r=product/detail&id='+rows[i].id+'" target="_blank">'+
 							'<img src="products/'+rows[i].id+'/1.jpg" alt="" title="">'+
 							'</a>'+
-							'<p>'+rows[i].title+'----'+rows[i].price+'</p>'+
+							'<p>'+rows[i].title+'<br>'+rows[i].price+'</p>'+
 							'</div>';
 					}
 					dom += '</div>';

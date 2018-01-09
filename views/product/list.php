@@ -12,11 +12,11 @@
 		
 			<?php foreach($v['rows'] as $i=>$m): ?>
 		
-            <div class="list-product col-md-4">
+            <div class="list-product col-md-3">
                 <a href="?r=product/detail&id=<?= $m['id'] ?>" target="_blank">
                     <img src="products/<?= $m['id'] ?>/1.jpg" alt="" title="">
                 </a>
-                <p><?= $m['title'] ?>----<?= $m['price'] ?></p>
+                <p><?= $m['title'] ?><br><?= $m['price'] ?></p>
             </div>
 
 			<?php endforeach; ?>
