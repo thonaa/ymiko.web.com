@@ -147,7 +147,7 @@ AppAsset::register($this);
 
 <!---->
 <div class="footer-pro-list">
-    <a href="javascript:;"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+    <a href="https://www.facebook.com/YmikoFans/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
     <a href="javascript:;"><i class="fa fa-twitter " aria-hidden="true"></i></a>
     <a href="javascript:;"><i class="fa fa-youtube-play " aria-hidden="true"></i></a>
     <a href="javascript:;"><i class="fa fa-instagram" aria-hidden="true"></i></a>

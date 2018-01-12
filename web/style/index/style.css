@@ -56,7 +56,13 @@
   background-color: #fff;
   overflow: hidden;
 }
+#main .main-content-3 .a-block .images-hover {
+  width: 100%;
+  display: none;
+  opacity: 0;
+}
 #main .main-content-3 .a-block .images {
+  display: block;
   width: 100%;
 }
 #main .main-content-3 .a-block .images img {
@@ -81,9 +87,6 @@
 }
 #main .main-content-3 .a-block span {
   text-align: center;
-}
-#main .main-content-3 .a-block:hover {
-  color: #000;
 }
 #banner {
   margin: 0 auto;

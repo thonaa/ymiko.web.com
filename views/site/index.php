@@ -17,12 +17,12 @@
                 </a>
             </div>
             <div class="item">
-                <a href="?r=product/detail&id=7">
+                <a href="?r=product/detail&id=10">
                     <img src="images/banner2.jpg" alt="Third slide" class="image-index-slider">
                 </a>
             </div>
             <div class="item">
-                <a href="?r=product/detail&id=10">
+                <a href="?r=product/detail&id=7">
                     <img src="images/banner3.jpg" alt="fouth slide" class="image-index-slider">
                 </a>
             </div>
@@ -74,6 +74,7 @@
             <div class="col-md-4 col-sm-6">
                 <a href="?r=product/detail&id=<?= $v['id'] ?>" target="_blank" class="a-block center-block">
                     <img class="images" src="products/<?= $v['id'] ?>/1.jpg" alt="<?= $v['title'] ?>">
+                    <img class="images-hover" src="products/<?= $v['id'] ?>/2.jpg" alt="<?= $v['title'] ?>">
                     <h5 class="text-uppercase"><?= $v['title'] ?></h5>
                     <span>——<?= $v['price'] ?></span>
                     <p><?= $v['keywords'] ?></p>
@@ -88,6 +89,7 @@
 	
 </div>
 <?php
+$this->registerCssFile('@web/style/index/style.css', ['depends' => ['app\assets\AppAsset']]);
 $this->registerJsFile('@web/js/index/index.js', ['depends' => ['app\assets\AppAsset']]);
 
 ?>	
