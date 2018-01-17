@@ -22,7 +22,6 @@ class AppAsset extends AssetBundle
     public $css = [
 		"https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css",
 		"font-awesome-4.7.0/css/font-awesome.css",
-		"style/common.css",
 		"style/root.css",
 		"style/index/style.css"
 		

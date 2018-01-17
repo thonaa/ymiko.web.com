@@ -13,14 +13,19 @@
 }
 #main {
   background-color: #fff;
-  width: 78%;
+  width: 85%;
   margin: 0 auto;
 }
 #main .main-content-1 {
   padding: 35px 0px;
 }
+#main .main-content-1 .col-md-4 {
+  padding-right: 8px;
+  padding-left: 8px;
+}
 #main .main-content-1 a {
   display: block;
+  border: 1px solid #ffffff;
 }
 #main .main-content-1 a:hover {
   transform: scale(1.03);
@@ -35,7 +40,7 @@
 }
 #main .main-content-2 h4 {
   margin: 0 auto;
-  height: 80px;
+  height: 66px;
   line-height: 40px;
   text-align: center;
   width: 466px;
@@ -51,6 +56,10 @@
   bottom: -3px;
   left: 183px;
   background-color: #f9b552;
+}
+#main .main-content-3 .col-md-4 {
+  padding-right: 11px;
+  padding-left: 11px;
 }
 #main .main-content-3 .a-block {
   background-color: #fff;
@@ -86,7 +95,11 @@
   margin-bottom: 20px;
 }
 #main .main-content-3 .a-block span {
-  text-align: center;
+  text-align: right;
+  color: #666;
+}
+#main .main-content-3 .a-block p:last-of-type {
+  color: #666;
 }
 #banner {
   margin: 0 auto;

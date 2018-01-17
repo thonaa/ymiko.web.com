@@ -7,3 +7,7 @@
     <p>Email us at service@51ymiko.com.</p>
     <p>If you want to join our review or influencer program, please contact <a href="join.html"><strong>here</strong></a>.</p>
 </div>
+<?php
+$this->registerCssFile('@web/style/common.css', ['depends' => ['app\assets\AppAsset']]);
+
+?>

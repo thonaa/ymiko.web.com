@@ -7,3 +7,6 @@
     <p>We are determined to be a global leader in household improvements. Cooperated with the most competitive delivery company and suppliers, we can ensure you receive the top-quality products in the shortest time.</p>
 
 </div>
+<?php
+$this->registerCssFile('@web/style/common.css', ['depends' => ['app\assets\AppAsset']]);
+?>

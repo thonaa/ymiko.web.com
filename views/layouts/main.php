@@ -47,7 +47,7 @@ AppAsset::register($this);
 
         <div class="logo">
             <a href="/">
-                <img src="images/logo.jpg" alt="Ymiko" title="Ymiko"/>
+                <img src="images/logo.png" alt="Ymiko" title="Ymiko"/>
             </a>
         </div>
 		

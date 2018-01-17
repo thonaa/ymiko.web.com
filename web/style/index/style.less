@@ -26,12 +26,17 @@
 
   @h4-width:466px;
   background-color: #fff;
-  width:78%;
+  width:85%;
   margin:0 auto;
   .main-content-1{
     padding:35px 0px;
+    .col-md-4{
+      padding-right:8px;
+      padding-left:8px;
+    }
     a{
       display: block;
+      border:1px solid #ffffff;
     }
     a:hover{
 
@@ -48,7 +53,7 @@
     height:106px;
     h4{
       margin:0 auto;
-      height:80px;
+      height:66px;
       line-height: 40px;
       text-align: center;
       width: @h4-width;
@@ -68,6 +73,10 @@
     }
   }
   .main-content-3{
+    .col-md-4{
+      padding-right:11px;
+      padding-left:11px;
+    }
     .a-block{
       background-color: #fff;
       overflow: hidden;
@@ -100,9 +109,14 @@
         margin-bottom:20px;
       }
       span{
-        text-align: center;
+        text-align: right;
+        color: #666;;
+      }
+      p:last-of-type{
+        color: #666;
       }
     }
+    
 
   }
 }
